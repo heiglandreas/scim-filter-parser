@@ -18,7 +18,7 @@ class UnexpectedValueException extends Tokenizer\Exception
      * @param int              $code
      * @param \Throwable|null  $previous
      */
-    public function __construct(Tokenizer\Stream $stream, $code = 0, \Throwable $previous = null)
+    public function __construct(Tokenizer\Stream $stream, $code = 0, ?\Throwable $previous = null)
     {
         $message = 'Unexpected value at line 1, column 1.';
 
